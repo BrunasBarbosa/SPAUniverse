@@ -44,10 +44,6 @@ export default function Path() {
         homePage();
         break;
 
-      // case '#/home':
-      //   homePage();
-      //   break;
-
       case '#/universe':
         universePage();
         break;
