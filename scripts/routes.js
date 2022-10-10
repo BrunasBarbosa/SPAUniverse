@@ -31,6 +31,9 @@ export default function Path() {
   function notFoundPage() {
     body.classList.add('bg-home');
     body.classList.remove('bg-universe', 'bg-exploration');
+    homeRoute.classList.remove('brightness');
+    universeRoute.classList.remove('brightness');
+    explorationRoute.classList.remove('brightness');
   }
 
   function routeChange() {
@@ -41,9 +44,9 @@ export default function Path() {
         homePage();
         break;
 
-      case '#/home':
-        homePage();
-        break;
+      // case '#/home':
+      //   homePage();
+      //   break;
 
       case '#/universe':
         universePage();
