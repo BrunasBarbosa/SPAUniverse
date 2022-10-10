@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+}
+
+:root {
+  --font-page: 'Roboto', sans-serif;
+  --font-color: hsl(240, 9%, 100%);
+  --button-hover: hsl(194, 97%, 31%);
+}
+
+body {
+  max-height: 100vh;
+  font-family: var(--font-page);
+
+  display: grid;
+}
+
+body,
+a {
+  color: var(--font-color);
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.bg-home {
+  background-image: url('/images/home.png');
+}
+
+.bg-universe {
+  background-image: url('/images/universo.png');
+}
+
+.bg-exploration {
+  background-image: url('/images/exploracao.png');
+}
+
+header,
+nav {
+  display: flex;
+}
+
+header {
+  margin: 4.2rem 0 4.2rem 7.2rem;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+nav {
+  gap: 4.2rem;
+}
+
+svg,
+button:hover,
+h1,
+.brightness {
+  animation: brightness 2s alternate infinite ease-in-out;
+}
+
+.brightness {
+  font-weight: 700;
+}
+
+a {
+  padding: 0 1.8rem;
+  font-size: clamp(1.6rem, 1rem + 1vw, 2.6rem);
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 30vh auto 0;
+  align-items: center;
+}
+
+#container {
+  display: block;
+  margin-top: 12vh;
+  margin-left: 10.2rem;
+}
+
+h1 {
+  font-size: clamp(3.2rem, 1rem + 5vw, 6.2rem);
+  line-height: 125%;
+}
+
+p {
+  margin-top: 1.6rem;
+  width: clamp(34rem, 1rem + 40vw, 64.8rem);
+  font-size: 18px;
+  line-height: 160%;
+}
+
+button {
+  cursor: pointer;
+  margin: 2.4rem auto 0;
+  padding: 1.2rem 3.2rem;
+  font-size: 1.4rem;
+  font-weight: 4.8rem;
+  line-height: 2.4rem;
+  color: var(--font-color);
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid var(--font-color);
+  border-radius: 5px;
+}
+
+button:hover {
+  background: var(--font-color);
+  color: var(--button-hover);
+}
+
+@keyframes brightness {
+  0% {
+    filter: drop-shadow(0 0 0.5rem var(--font-color));
+  }
+
+  100% {
+    filter: drop-shadow(0 0 2rem var(--font-color));
+  }
+}
