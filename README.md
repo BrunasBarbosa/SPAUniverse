@@ -22,4 +22,17 @@ There's three ways of doing this: clicking on navigation elements in the header,
 
 ##
 
-🔗[Click here to access](https://spauniverse-brunasbarbosa.netlify.app/)
+🔗 [Click here to access](https://spauniverse-brunasbarbosa.netlify.app/)
+
+## ⚙️ Technologies
+
+- HTML
+- CSS
+- JavaScript
+- Git and Github
+
+##
+
+
+
+
